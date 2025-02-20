@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identify Plant Disease | GreenGuard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">GreenGuard</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="identify.html" class="active">Identify</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Identify Section -->
+    <section class="identify">
+        <div class="container">
+            <h2>Identify Plant Disease</h2>
+            <div class="upload-box">
+                <div class="upload-area" id="uploadArea">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Drag & Drop or <span>Browse</span> to Upload Image</p>
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                </div>
+                <button class="cta-button" id="analyzeButton" disabled>Analyze Image</button>
+            </div>
+            <div class="result-box" id="resultBox">
+                <h3>Analysis Result</h3>
+                <div class="result-content" id="resultContent">
+                    <!-- Result will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+</body>
+</html>
